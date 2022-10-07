@@ -29,6 +29,7 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/virtual.css">
   
   <link rel="stylesheet" type="text/css" href="./assets/css/topbar.virtual.css">
+  <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css">
 </head>
 <body class="theme-red">
   
@@ -597,7 +598,7 @@
           </div>
         </div> -->
         <div class="col-lg-12 text-center">
-          <form class="vg-contact-form">
+          <form class="vg-contact-form" onsubmit="event.preventDefault(); window.location.reload()">
             <div class="form-row">
               <div class="col-12 mt-3 wow fadeInUp">
                 <input class="form-control" type="text" name="Name" placeholder="Your Name">
@@ -628,7 +629,7 @@
           <div class="footer-info">
             <p>Where to find me</p>
             <hr class="divider">
-            <p class="fs-large fg-white">1600 Amphitheatre Parkway Mountain View, California 94043 US</p>
+            <p class="fs-large fg-white">203/3, West Nakhalpara, Tejgaon, Dhaka.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-3 py-3">
@@ -636,10 +637,11 @@
             <p>Follow me</p>
             <hr class="divider">
             <ul class="list-unstyled">
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Youtube</a></li>
+              <li><a style="text-decoration: none;" href="https://github.com/tariqulislamtuhin" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
+              <li><a style="text-decoration: none;" href="https://www.linkedin.com/in/tariqulisamtuhin/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIN</a></li>
+              <li><a style="text-decoration: none;" href="https://twitter.com/tituhin_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+              <li><a style="text-decoration: none;" href="https://www.facebook.com/TarequlIslamTuhin" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a></li>
+              <li><a style="text-decoration: none;" href="https://www.instagram.com/tituhin/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
             </ul>
           </div>
         </div>
@@ -648,15 +650,15 @@
             <p>Contact me</p>
             <hr class="divider">
             <ul class="list-unstyled">
-              <li>info@virtual.com</li>
-              <li>+8890234</li>
-              <li>+813023</li>
+              <li><a style="text-decoration: none;" href="mailto:tarequlislam105150@gmail.com"><i class="fa fa-google"></i> Gmail</a> </li>
+              <li><a style="text-decoration: none;" href="tel:+8801718404051"><i class="fa fa-mobile" aria-hidden="true"> Mobile</i></a></li>
+              <li><a style="text-decoration: none;" href="https://wa.me/01955945240"><i class="fa fa-whatsapp" aria-hidden="true"> WhatsApp</i></a></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="row justify-content-center mt-3">
-        <div class="col-12 mb-3">
+        <!-- <div class="col-12 mb-3">
           <h3 class="fw-normal text-center">Subscribe</h3>
         </div>
         <div class="col-lg-6">
@@ -666,15 +668,17 @@
               <input type="submit" class="btn btn-theme no-shadow" value="Subscribe">
             </div>
           </form>
-        </div>
+        </div> -->
         <div class="col-12">
-          <p class="text-center mb-0 mt-4">Copyright &copy;2020. All right reserved | This template is made with <span class="ti-heart fg-theme-red"></span> by <a href="https://www.macodeid.com/">MACode ID</a></p>
+          <p class="text-center mb-0 mt-4">Copyright &copy; <span id="footerYear"></span>. All right reserved | Happy Coding <span class="ti-heart fg-theme-red"></span> by <a href="#">Taqiqul Islam Tuhin</a></p>
         </div>
       </div>
     </div>
   </div> <!-- End footer -->
   
-  
+  <script>
+    document.getElementById("footerYear").innerText = new Date().getFullYear();
+  </script>
   <script src="./assets/js/jquery-3.5.1.min.js"></script>
     
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
